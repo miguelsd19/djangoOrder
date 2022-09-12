@@ -13,8 +13,6 @@ class OrderRegisterSerializer(serializers.ModelSerializer):
 
 
 class NumberOrderSerializer(serializers.ModelSerializer):
-    #test = serializers.CharField(source='OrderItems.status', read_only=True)
-    #data= OrderItems.objects.filter(OrderNumber__contains= = '1')
     class Meta:
         model = OrderStatus
         fields = ['OrderNumber', 'status']

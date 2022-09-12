@@ -4,7 +4,8 @@ from OrderStatus.models import OrderItems, OrderStatus
 
 @admin.register(OrderStatus)
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ['OrderNumber', 'status']
+    list_display = ['OrderNumber']
+
 
 @admin.register(OrderItems)
 class ItemsAdmin(admin.ModelAdmin):

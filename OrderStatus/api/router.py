@@ -1,8 +1,9 @@
-from rest_framework.routers import DefaultRouter
+from django.urls import path
 from OrderStatus.api.views import OrderApiViewSet, OrderNumberApiviewSet
 
 
-router_category = DefaultRouter()
+urlpatterns = [
+    path('Orders', OrderApiViewSet.as_view(), name='OrderApiViewSet'),
+    path('OrderStatus', OrderNumberApiviewSet.as_view(), name='OrderNumberApiViewSet')
 
-router_category.register(prefix='Orders', basename='Orders', viewset=OrderApiViewSet)
-router_category.register(prefix='OrderNumber', basename='OrderNumber', viewset=OrderNumberApiviewSet)
+]
