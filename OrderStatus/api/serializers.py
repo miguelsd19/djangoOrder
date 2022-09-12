@@ -17,5 +17,5 @@ class NumberOrderSerializer(serializers.ModelSerializer):
     #data= OrderItems.objects.filter(OrderNumber__contains= = '1')
     class Meta:
         model = OrderStatus
-        fields = ['OrderNumber', 'status', 'OrderItems']
+        fields = ['OrderNumber', 'status']
 
