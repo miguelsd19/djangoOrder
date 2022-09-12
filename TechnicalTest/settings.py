@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'drf_yasg',
     'users',
     'OrderStatus',
-    'season'
+    'season',
+    'Wheather'
 ]
 
 MIDDLEWARE = [

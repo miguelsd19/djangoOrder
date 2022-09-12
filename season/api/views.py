@@ -8,7 +8,6 @@ from season.api.serializers import GetSeasonSerializer
 class seasonView(APIView):
 
     def get(self, request, format=None, *args, **kwargs):
-        print(request)
         season=Season.objects.all()
         for seas in season:
             print(seas.date)
